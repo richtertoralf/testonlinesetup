@@ -3,5 +3,7 @@
 # der Querystring ?$(date +%s) sorgt dafür, das immer die aktuellste Datei heruntergeladen wird, da Server/Proxys 
 # immer eine neue URL bekommen.
 
+# Hier kommt jetzt die Installationsroutine
 apt update -y && apt upgrade -y
+# hier kann auch was Komplexeres stehen ;-)
 echo "Update fertig :-)"
