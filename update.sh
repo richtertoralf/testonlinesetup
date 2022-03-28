@@ -5,5 +5,10 @@
 
 # Hier kommt jetzt die Installationsroutine
 apt update -y && apt upgrade -y
+
 # hier kann auch was Komplexeres stehen ;-)
+# z.B. conf-Files downloaden
+# weitere Skripte downloaden und ausführbar machen
+# Dienste starten (dann sollte dieses Skript aber auch mit root-Rechten ausgeführt werden)
+
 echo "Update fertig :-)"
