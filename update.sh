@@ -5,6 +5,7 @@
 
 # Hier kommt jetzt die Installationsroutine
 apt update -y && apt upgrade -y
+apt autoremove -y
 
 # hier kann auch was Komplexeres stehen ;-)
 # z.B. conf-Files downloaden
