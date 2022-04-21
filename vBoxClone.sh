@@ -12,7 +12,7 @@ read Hostname
 # Assign the value of the variable
 hostnamectl set-hostname $Hostname
 
-# Change Machine-ID
+# Change Machine-ID (works like this on Ubuntu machines)
 rm -f /etc/machine-id
 rm -f /var/lib/dbus/machine-id
 systemd-machine-id-setup
