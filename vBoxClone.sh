@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Download und Start der Datei im Terminal mit:
+# Download and start the file in the terminal with:
 # bash -c "$(curl -k -s https://raw.githubusercontent.com/richtertoralf/testonlinesetup/main/vBoxClone.sh?$(date +%s))"
-# der Querystring ?$(date +%s) sorgt dafür, das immer die aktuellste Datei heruntergeladen wird, da Server/Proxys 
-# immer eine neue URL bekommen.
+# The query string ?$(date +%s) ensures that always the most file is always downloaded,
+# because servers/proxies always always get a new URL.
 
 # change Hostname
 echo -n "Enter New Hostname!: "
