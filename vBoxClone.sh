@@ -12,7 +12,7 @@ read Hostname
 # Assign the value of the variable
 hostnamectl set-hostname $Hostname
 
-# Change Machine-ID (works like this on Ubuntu machines)
+# Change Machine-ID (works like this on Ubuntu machines, but not with standard Debian)
 rm -f /etc/machine-id
 rm -f /var/lib/dbus/machine-id
 systemd-machine-id-setup
@@ -24,3 +24,6 @@ dpkg-reconfigure openssh-server
 # update
 apt update -y && apt upgrade -y
 apt autoremove -y
+
+# correct /etc/hosts
+echo "If necessary, correct /etc/hosts by adding the new hostname after 127.0.1.1."
