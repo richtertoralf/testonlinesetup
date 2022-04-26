@@ -17,6 +17,7 @@ rm -f /etc/machine-id
 rm -f /var/lib/dbus/machine-id
 systemd-machine-id-setup
 # if Debian, set manually the link: ln -sf /etc/machine-id /var/lib/dbus/
+ln -sf /etc/machine-id /var/lib/dbus/
 
 # Recreate SSH-Keys
 rm -f /etc/ssh/ssh_host_*
